@@ -1,9 +1,10 @@
 import { Mtg, Part } from "./types"
 
-const BASE = "http://localhost:8000"
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
 
 async function req<T>(path: string, opts?: RequestInit): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, {
+  const res = await fetch(`${API_URL}${path}`, {
     headers: { "Content-Type": "application/json" },
     ...opts,
   })
