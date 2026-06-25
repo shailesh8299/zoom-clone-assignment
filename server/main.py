@@ -9,7 +9,10 @@ app = FastAPI(title="Zoom Clone API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://zoom-clone-assignment-two.vercel.app/",  
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
