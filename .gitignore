@@ -1,0 +1,16 @@
+# Python virtual env, caches and databases
+server/venv/
+server/__pycache__/
+server/*.pyc
+server/zoom.db
+
+# Node modules and Next.js compile outputs
+client/node_modules/
+client/.next/
+client/out/
+client/build/
+client/.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
